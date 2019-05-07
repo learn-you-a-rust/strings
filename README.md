@@ -1,7 +1,7 @@
 # strings
 https://doc.rust-lang.org/stable/book/ch08-02-strings.html
 
-Strings are collections of bytes. However, strings are different from other collections ex. in the way you index into them. The 
+Strings are collections of bytes - specifically they are `Vec<u8>`. However, strings are different from other collections ex. you can't index into them. The 
 `String` type is implemented in the standard library and is:
 - Mutable
 - Owned
