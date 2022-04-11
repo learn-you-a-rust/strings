@@ -14,5 +14,10 @@ fn main() {
     let s2 = s1; // Here, the pointer, length, and capacity of the buffer is
                  // copied, but not the actual data, as it was above
 
-    println!("{}, world!", s1); // This won't work; s1 has been moved
+    //println!("{}, world!", s1); // This won't work; s1 has been moved
+
+    let s1 = String::from("hello");
+    let s2 = s1.clone(); // To perform a deep copy, use the clone method
+
+    println!("s1 = {}, s2 = {}", s1, s2);
 }
