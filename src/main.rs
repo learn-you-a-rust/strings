@@ -13,4 +13,6 @@ fn main() {
     let s1 = String::from("Hello");
     let s2 = s1; // Here, the pointer, length, and capacity of the buffer is
                  // copied, but not the actual data, as it was above
+
+    println!("{}, world!", s1); // This won't work; s1 has been moved
 }
